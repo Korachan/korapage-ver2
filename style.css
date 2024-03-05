@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+/* メインナビゲーション */
+nav {
+    display: flex;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin-right: 20px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*共通部分
+--------------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%; 
+}
+
+/*header
+--------------------------------------------------------------------*/
+.logo {
+    width: 250px;
+    margin-top: 0px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 60px;
+    list-style: none;  
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432; 
+}
+.main-nav a:hover{
+    color: #00BF63;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%; 
+}
+
+/*footer
+-----------------------------------*/
+footer {
+    background: #000;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/*home
+-------------------------------------------------------------------*/
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+/*見出し
+------------------------------*/
+.page-title {
+    font-size: 5rem;
+    font-family: "MS PMincho";
+    text-transform: uppercase;
+    font-weight: normal;  
+}
+
+/*button
+---------------------------------*/
+.button {
+    font-size: 1.375rem;
+    background: #00BF63;
+    color: #ffffff;
+    padding: 18px 32px;
+    border-radius: 50px;
+    box-shadow:  10px 10px 20px #3d3d3d;
+}
+.button:hover {
+    background: #ffffff;
+    color: #00BF63;
+}
+
+
+/*history
+-----------------------------------------------------------------------*/
+#history .page-title {
+    text-align: center;
+}
+
+#history .img1{
+    width: 500px;
+}
+
+/* 横並び */
+
+#history .flex {
+    display: flex; /*横並び*/
+  }
+#history .flex .img1 {
+    width: 700px; /*画像サイズ指定*/
+    margin: 100px 200px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+#history .flex .text {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    font-size: 150%;
+    text-align: center;
+    line-height: 4rem;
+    margin: 100px 0 0 0px;
+    padding: 0px;
+  }
+  
+/*project
+---------------------------------------------------------------------------------------*/
+#project .page-title {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    margin: 50px 0px 150px 0px; 
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+  }
+
+  .hover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .hover .hover-img {
+    margin: 0px;
+    padding: 0px;
+  }
+  .hover-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .hover .hover-text {
+    font-family: "MS PMincho";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(18, 78, 29, 0.719);
+    /*透明にして表示させない*/
+    opacity: 0;
+    /*ホバーの動き方*/
+    transition: .3s ease-in-out;
+  }
+  .hover .hover-text .text1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+  }
+  .hover .hover-text .text2 {
+    font-family: "Yu Gothic Medium";
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  /*ホバーエフェクト*/
+  .hover:hover .hover-text {
+    /*不透明にして表示*/
+    opacity: 1;
+  }
+
+
+/*profile
+------------------------------------------------------------------------------------*/
+.pro-container {
+    display: grid;
+    justify-content: center;
+    margin: 50px 0px 150px 0px; 
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+  }
+
+  .itemp {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+  }
+
+  .hoverp {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .hoverp .hoverp-img {
+    margin: 0;
+    padding: 0;
+  }
+  .hoverp-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .hoverp .hoverp-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(18, 78, 29, 0.719);
+    /*透明にして表示させない*/
+    opacity: 0;
+    /*ホバーの動き方*/
+    transition: .3s ease-in-out;
+  }
+  .hoverp .hoverp-text .textp1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+    
+    
+  }
+  /*ホバーエフェクト*/
+  .hoverp:hover .hoverp-text {
+    /*不透明にして表示*/
+    opacity: 1;
+  }
+  
+/*contact
+------------------------------------------------------------------------------------------*/
+#contact .page-title {
+    text-align: center;
+}
+#contact {
+    background-image: url();
+    min-height: 70vh;
+}
+
+#contact .center {
+    display: flex;
+    justify-content: center; /* 要素を横方向に中央に配置 */
+    align-items: center; /* 要素を縦方向に中央に配置 */
+    height: 70vh; /* ビューポートの高さいっぱいに要素を表示 */
+}
+
+
+
+
+/* フォーム 
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(156, 255, 197, 0.5);
+    border: 1px #fff solid;
+    border-radius: 9px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 500px;
+}
+textarea {
+    width: 100%;
+    max-width: 1000px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    margin-bottom: 120px;
+}
+-----------------------------------------------------*/
+
+
+
+
+/*responsive
+------------------------------------------------------------------------------*/
+@media (max-width: 760px) {
+    .page-title{
+        font-size: 2.5rem;
+    }
+
+    /* header
+    ---------------------------------------*/
+    .main-nav {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: auto;
+    }
+    .main-nav li{
+        text-align: center;
+    }
+    .main-nav li a {
+        color: #00BF63;
+    }
+
+    /* home------------------------------------*/
+    .home-content {
+        margin-top: 20%;
+    }
+
+    .page-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*history------------------------------*/
+    #history .page-title {
+        margin-top: 30px;
+    }
+
+    #history .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    #history .flex .text {
+        margin: 0px;
+        padding: 70px;
+    }
+
+    /*project----------------------------------------*/
+    #project .page-title{
+        margin-top: 20px;
+    }
+
+    .container {
+        display: grid;
+        justify-content: center;
+        margin: 50px 0px 150px 0px; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 50px;
+    }
+    .item {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    /*profile------------------------------------------*/
+    .pro-container {
+        display: grid;
+        justify-content: center;
+        margin: 50px 0px 150px 0px; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .itemp {
+        display: flex;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /*contact--------------------------------------------*/
+    #contact .page-title{
+        margin-top: 30px;
+    }
+
+    /*フォーム
+    input[type="text"]
+    input[type="email"]
+    textarea {
+        max-width: 100%;
+    }
+    ---------*/
+}
